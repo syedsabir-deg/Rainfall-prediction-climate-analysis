@@ -117,6 +117,21 @@ The raw district files and processed dataset may need to be obtained separately 
 
 ## 9. Installation and Execution
 
+**Important — Dataset and Model Files**
+
+The raw dataset, processed dataset, and trained model are excluded from this GitHub repository through `.gitignore`.
+
+Before running the application:
+1. Obtain the original monthly district dataset and place the files in `Data/Raw/Monthly/`.
+2. Prepare `Data/Processed/rainfall_combined.csv` using the project's data preparation process.
+3. Install the required dependencies.
+4. Run `python train_model.py` to train and save the model.
+5. Run `python -m streamlit run app.py` to launch the application.
+
+The model provides estimates based on historical patterns; it is not an official or real-time weather forecast. Verify the original dataset documentation for the rainfall measurement unit before interpreting prediction values.
+
+
+
 ### Step 1: Install Dependencies
 
 ```bash
